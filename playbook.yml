@@ -3,6 +3,46 @@
   - name: criando o arquivo
     copy: 
       dest: /home/ubuntu/index.html
-      content: <h1> Feito com Terraform e Ansible</h1>
+      # content: <h1> Feito com Terraform e Ansible</h1>
+      content: |
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>THE TORTURED POETS DEPARTMENT</title>
+            <style>
+                body {
+                  font-family: Arial, sans-serif;
+                  margin: 0;
+                  padding: 0;
+                  background-color: #f2f2f2;
+                }
+                .container {
+                  max-width: 800px
+                  margin: 0 auto;
+                  text-align: center;
+                  padding: 20px;
+                }
+                hl {
+                  color: #333;
+                }
+                img {
+                  max-width: 100%;
+                  height: auto;
+                  display: block;
+                  margin: 20px auto;
+                  border-radius: 10px;
+                  box-shadow: 0 0 10px rgba (0, 0, 0, 0.1);
+                }
+            </style>
+        </head>
+        <body>
+            <div class="container">
+                <hl>WELCOME TO THE TORTURED POETS DEPARTMENT</hml>
+                <img src="https://i.pinimg.com/564x/8b/0d/32/8b0d328e02b58fb93f281049eacbc4be.jpg" alt="Hi!"
+            </div>
+        </body>
+        </html>
   - name: criando o servidor
     shell: "nohup busybox httpd -f -p 8080 &"
