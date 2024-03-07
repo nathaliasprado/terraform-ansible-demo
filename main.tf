@@ -25,6 +25,6 @@ resource "aws_instance" "app_server" { #configurações relacionadas com o recur
   # EOF
 
   tags = {
-    Name = "Teste AWS"
+    Name = "TERRAFORM_ANSIBLE_PYTHON"
   }
 }
