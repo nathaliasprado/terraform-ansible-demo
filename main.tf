@@ -16,7 +16,7 @@ provider "aws" { #configurações relacionadas com o provedor, se tivermos múlt
 resource "aws_instance" "app_server" { #configurações relacionadas com o recurso que queremos criar, podendo ser instâncias, bancos de dados, entre outras opções.
   ami           = "ami-0c7217cdde317cfec" 
   instance_type = "t2.micro"
-  key_name      = "iac-alura"
+  key_name      = "key-name"
   # user_data     = <<-EOF
   # #!/bin/bash
   # cd /home/ubuntu
