@@ -56,6 +56,3 @@ Sinta-se à vontade para abrir issues ou pull requests para melhorar este reposi
 
 ## 📚 Origem do Projeto
 Este projeto foi desenvolvido como parte do curso **"Infraestrutura como código: preparando máquinas na AWS com Ansible e Terraform"** da Alura.
-
-## 📝 Licença
-Este projeto está licenciado sob a MIT License.
