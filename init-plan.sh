@@ -1,13 +1,11 @@
 #!/bin/bash
 
-# Caminho para o diretório onde está o código do Terraform
-terraform_dir="/home/nathaliaprado/repositorios/ansible-terraform-curso"
+# Define o diretório do Terraform 
+terraform_dir="$(dirname "$(realpath "$0")")"
 
-# Mudar para o diretório do Terraform
-cd $terraform_dir
-
-# Inicializar o Terraform (se já estiver inicializado, não fará nada)
+# Inicializa o Terraform
 terraform init
 
-# Visualizar as mudanças no terminal
+# Executa o plan e o apply
 terraform plan
+terraform apply -auto-approve
